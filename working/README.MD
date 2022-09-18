@@ -5,6 +5,9 @@ This example uses Terraform to create:
 * a private container registery in Azure.
 * a Kubernetes cluster in Azure.
 
+And to deploy it to the created infrastructure:
+* **MongoDB database**
+
 Run this example using:
 
 ```bash

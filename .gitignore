@@ -28,3 +28,4 @@ example-4/video-streaming/node_modules/
 example-1/scripts/.terraform.tfstate.lock.info
 tfplan*
 .terraform/
+terraform.tfstate*
