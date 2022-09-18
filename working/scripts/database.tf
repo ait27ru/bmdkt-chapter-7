@@ -36,7 +36,7 @@ resource "kubernetes_deployment" "database" {
         // specify details for the single container instantiated by the pod
         container {
           // set the image from which to instantiate the container
-          image = "mongo:4.2.8"
+          image = "mongo:5.0.11"
           // set the name of the container
           name  = "database"
 
