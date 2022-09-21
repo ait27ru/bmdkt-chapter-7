@@ -1,13 +1,13 @@
 # Sets global variables for this Terraform project.
 
-variable app_name {
+variable "app_name" {
   default = "flixtube202209"
 }
-variable location {
+variable "location" {
   default = "West US"
 }
 
-variable admin_username {
+variable "admin_username" {
   default = "linux_admin"
 }
 
@@ -16,8 +16,8 @@ variable admin_username {
 # 2. az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<id field from previous command output>"
 # use appId for client_id and password for client_secret
 
-variable client_id {
+variable "client_id" {
 }
 
-variable client_secret {
+variable "client_secret" {
 }
