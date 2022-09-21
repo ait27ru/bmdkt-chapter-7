@@ -14,6 +14,10 @@ terraform {
       source  = "hashicorp/kubernetes"
       version = "2.13.1"
     }
+    null = {
+      sousource  = "hashicorp/null"
+      verversion = "3.1.1"
+    }
   }
 }
 
@@ -30,4 +34,7 @@ provider "kubernetes" {
   client_certificate     = base64decode(azurerm_kubernetes_cluster.cluster.kube_config[0].client_certificate)
   client_key             = base64decode(azurerm_kubernetes_cluster.cluster.kube_config[0].client_key)
   cluster_ca_certificate = base64decode(azurerm_kubernetes_cluster.cluster.kube_config[0].cluster_ca_certificate)
+}
+
+provider "null" {
 }

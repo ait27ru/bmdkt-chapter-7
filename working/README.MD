@@ -8,6 +8,7 @@ This example uses Terraform to create:
 And to deploy it to the created infrastructure:
 * **MongoDB database**
 * **RabbitMQ**
+* **Video streaming microservice**
 
 Run this example using:
 

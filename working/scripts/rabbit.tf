@@ -54,22 +54,3 @@ resource "kubernetes_service" "rabbit" {
     }
   }
 }
-
-resource "kubernetes_service" "rabbit_dashboard" {
-  metadata {
-    name = "rabbit-dashboard"
-  }
-
-  spec {
-    selector = {
-      pod = kubernetes_deployment.rabbit.metadata[0].labels.pod
-    }
-
-    port {
-      port = 15672
-    }
-
-    // type = "LoadBalancer"
-  }
-}
-
