@@ -69,6 +69,6 @@ resource "kubernetes_service" "database" {
         }
 
         // expose the service to the external world using Azure Load Balancer
-        type             = "LoadBalancer"
+        // type             = "LoadBalancer"
     }
 }
