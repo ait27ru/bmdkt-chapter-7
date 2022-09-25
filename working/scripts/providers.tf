@@ -15,8 +15,8 @@ terraform {
       version = "2.13.1"
     }
     null = {
-      sousource  = "hashicorp/null"
-      verversion = "3.1.1"
+      source  = "hashicorp/null"
+      version = "3.1.1"
     }
   }
 }
